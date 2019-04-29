@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SplashActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="CNP Maintenance App"
+        android:textColor="@color/app_color"
+        android:textSize="20sp"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash"
+        android:id="@+id/iv_splash_image"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_splash_image"
+        android:text="CNP The Heart Of Life"
+        android:id="@+id/txt_splash_cnp_message"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/app_color"
+        android:textSize="20sp"/>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Developed By:-Nikvay Technology"
+        android:id="@+id/txt_splash_company_name"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textSize="17sp"/>
+
+
+
+</RelativeLayout>

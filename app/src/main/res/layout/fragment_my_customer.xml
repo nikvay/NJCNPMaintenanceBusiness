@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.MyCustomerFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Product Stock"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_edt_text"
+            android:drawableEnd="@drawable/ic_vector_search"
+            android:id="@+id/edt_search_customer"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_customer"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/edt_search_customer"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_add_customer">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btn_add_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="add customer" />
+
+    </RelativeLayout>
+
+</FrameLayout>
