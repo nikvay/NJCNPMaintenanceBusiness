@@ -1,5 +1,6 @@
 package com.cnp_maintenance.ui.activity;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -39,12 +40,13 @@ public class SplashActivity extends AppCompatActivity {
         RxPermissions.getInstance(SplashActivity.this)
                 .request(
                         android.Manifest.permission.READ_EXTERNAL_STORAGE,
-                        android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                /*  android.Manifest.permission.CAMERA,
+                        android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                  android.Manifest.permission.CAMERA,
                   Manifest.permission.READ_CALENDAR,
                   Manifest.permission.WRITE_CALENDAR,
                   Manifest.permission.ACCESS_FINE_LOCATION,
-                  Manifest.permission.ACCESS_COARSE_LOCATION)*/
+                  Manifest.permission.ACCESS_COARSE_LOCATION,
+                  Manifest.permission.ACCESS_NETWORK_STATE)
                 .subscribe(new Action1<Boolean>() {
                     @Override
                     public void call(Boolean aBoolean) {
