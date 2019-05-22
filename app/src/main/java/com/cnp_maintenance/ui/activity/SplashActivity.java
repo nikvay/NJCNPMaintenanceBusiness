@@ -12,8 +12,10 @@ import android.os.Bundle;
 import com.cnp_maintenance.MainActivity;
 import com.cnp_maintenance.R;
 import com.cnp_maintenance.utils.SharedUtils;
+import com.crashlytics.android.Crashlytics;
 import com.tbruyelle.rxpermissions.RxPermissions;
 
+import io.fabric.sdk.android.Fabric;
 import rx.functions.Action1;
 
 public class SplashActivity extends AppCompatActivity {
@@ -25,6 +27,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_splash);
 
         is_login = SharedUtils.getSharedUtils(getApplicationContext());
